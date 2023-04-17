@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }) {
       <Image
         className="pt-3"
         src={chococake}
+        alt="chococake"
         width={100}
         height={100}
         style={{ margin: "0 auto" }}

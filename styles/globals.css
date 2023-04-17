@@ -2,23 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* head에 쓰이는 폰트 */
 @font-face {
   font-family: 'LOTTERIACHAB';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메인 페이지에 적용되는 폰트 */
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KOTRAHOPE';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,15 +28,28 @@ html {
   background-color: #B99FE5;
 }
 
-body {
-  font-family: 'LOTTERIACHAB';
-  /* #B99FE5 B9A0FE */
-}
-
 .headname {
+  font-family: 'LOTTERIACHAB';
   z-index: 0;
   font-size: x-large;
   color: white;
   text-shadow: 4px 2px 2px rebeccapurple;
   justify-content: space-around;
+}
+
+.notice {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  background-color: white;
+  width: 420px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.otherfont{
+  font-family: 'KOTRAHOPE';
+  font-size: larger;
+}
+.place::placeholder {
+  color: white;
+  
+  /* font-style: italic; */
 }
