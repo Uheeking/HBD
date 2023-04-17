@@ -16,3 +16,26 @@
   }
 }
 
+@font-face {
+  font-family: 'LOTTERIACHAB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-color: #B99FE5;
+}
+
+body {
+  font-family: 'LOTTERIACHAB';
+  /* #B99FE5 B9A0FE */
+}
+
+.headname {
+  z-index: 0;
+  font-size: x-large;
+  color: white;
+  text-shadow: 4px 2px 2px rebeccapurple;
+  justify-content: space-around;
+}
