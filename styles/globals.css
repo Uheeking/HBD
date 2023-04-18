@@ -53,3 +53,9 @@ html {
   
   /* font-style: italic; */
 }
+.project-card {
+  @apply flex flex-col 
+          transition transform 
+          hover:scale-105
+          hover:shadow-lg
+}
