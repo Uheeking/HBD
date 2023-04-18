@@ -2,7 +2,9 @@ import React, { useState } from "react";
 require("dotenv").config();
 const TOKEN = process.env.NOTION_TOKEN;
 const DB_ID = process.env.NOTION_DATABASE_ID;
+const SECRET_URL = process.env.SECRET_URL;
 import Gift from "@/components/api/gift";
+import Link from "next/link";
 
 export default function index({ projects }) {
   console.log(projects);
@@ -26,6 +28,8 @@ export default function index({ projects }) {
       <br />
       <div className="otherfont text-center">
         선물은 아래 사이트에 들어가서 작성해주세요😍
+        <br />
+          <a href={`${SECRET_URL}`}>사이트 접속하기</a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 mt-0 m-6 py-10 gap-8 xs:w-full">
         {projects.results.map((items) => (

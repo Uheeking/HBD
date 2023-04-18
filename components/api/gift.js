@@ -3,40 +3,73 @@ import React, { useEffect, useState } from "react";
 require("dotenv").config();
 import box from "@/public/box.png";
 import bear from "@/public/bear.png";
+import Modal from "react-modal";
 const TOKEN = process.env.NOTION_TOKEN;
 const DB_ID = process.env.NOTION_DATABASE_ID;
 
-export default function Gift({data}) {
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    position: "fixed",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
+export default function Gift({ data }) {
   const { properties } = data;
   const name = properties.Name.title[0].plain_text;
-
-  const onClicks = (e) => {
-    alert('test')
-  }
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="otherfont">
       <Image
-      className="project-card"
-      src={box}
-      alt="image"
-      quality={100}
-      width={300}
-      height={100}
-      onClick={onClicks}
-    />
-    <div class="container">
-      <div class="modal">
-         <button onclick="CloseModal();"><Image src={bear} alt="" /></button>
-         <h1>- Happy New Year 2021 -</h1>
-         <h2>2021년 신축년 (辛丑年) </h2>
-         <h2>새해 복 많이 받으세요!</h2>
+        className="project-card"
+        src={box}
+        alt="image"
+        quality={100}
+        width={300}
+        height={100}
+        onClick={openModal}
+      />
+      <div className="text-center">이미지를 클릭해주세요~</div>
+      <div className="otherfont">
+        <Modal
+         className="otherfont"
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+          ariaHideApp={false}
+        >
+          <div className="text-center">
+            <Image
+              src={bear}
+              alt="image"
+              quality={100}
+              width={300}
+              height={100}
+              onClick={openModal}
+            />
+            {name}을 곧 전달해드리겠습니다!!
+          </div>
+          <div className="text-center">
+            <button onClick={closeModal}>close</button>
+          </div>
+        </Modal>
       </div>
-</div>
     </div>
   );
 }
-
 
 export async function getStaticProps(context) {
   const options = {
@@ -57,7 +90,7 @@ export async function getStaticProps(context) {
     options
   );
 
-  console.log('rest', res);
+  console.log("rest", res);
   const projects = await res.json();
 
   return {
