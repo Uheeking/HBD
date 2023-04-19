@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-require("dotenv").config();
+import dotenv from "dotenv";
 const TOKEN = process.env.NOTION_TOKEN;
 const DB_ID = process.env.NOTION_DATABASE_ID;
 const SECRET_URL = process.env.SECRET_URL;
@@ -61,10 +61,9 @@ export async function getStaticProps(context) {
     options
   );
 
-  console.log("rest", res);
-  const projects = await res.json();
+  const { results } = await res.json();
 
   return {
-    props: { projects }, // will be passed to the page component as props
+    props: { projects: { results } }, // will be passed to the page component as props
   };
 }
