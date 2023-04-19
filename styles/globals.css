@@ -39,6 +39,14 @@
   font-style: normal;
 }
 
+/* photo 페이지 */
+@font-face {
+  font-family: 'LeeSeoyun';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   background-color: #B99FE5;
 }
@@ -145,4 +153,14 @@ html {
 }
 .point{
   font-family: 'LOTTERIACHAB';
+}
+.shine{
+  font-family: 'LeeSeoyun';
+}
+.sik{
+  position: relative;
+  z-index: 10;
+  display: inline;
+  top: -380px;
+  left: 130px;
 }
