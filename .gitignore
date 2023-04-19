@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /public
+/components/write.js
 
 # testing
 /coverage
