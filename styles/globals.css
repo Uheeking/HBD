@@ -32,6 +32,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'InkLipquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   background-color: #B99FE5;
 }
@@ -48,7 +55,7 @@ html {
 .notice {
   font-family: 'NeoDunggeunmoPro-Regular';
   background-color: white;
-  width: 420px;
+  /* width: 380px; */
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -56,6 +63,12 @@ html {
 .otherfont {
   font-family: 'KOTRAHOPE';
   font-size: larger;
+}
+.giftfor {
+  font-family: 'KOTRAHOPE';
+  color: white;
+  font-size: larger;
+  height: 80px;
 }
 
 .place::placeholder {
@@ -115,4 +128,21 @@ html {
   height: 400px;
   background-image: url( "../public/letter1.png" );
   background-size: 100% 100%;
+}
+.bold {
+  display: inline-block;
+  margin: 10px 10px 35px 10px;
+  width: 150px;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  font-style: normal;
+  background: linear-gradient(to top, pink, rgba(54, 46, 212, 0.507));
+}
+.npoint{
+  font-family: 'InkLipquid';
+  font-size: x-large;
+}
+.point{
+  font-family: 'LOTTERIACHAB';
 }

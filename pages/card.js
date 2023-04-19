@@ -53,8 +53,8 @@ export default function card() {
             delaySpeed={1000}
           />
         </span>
-        <div className="text-center">
-          대답을 듣고 싶다면 소라고동을 클릭해주세요!
+        <div className="text-center npoint">
+          대답을 듣고 싶다면 <p className="point">소라고동🎺</p>을 클릭해주세요!
         </div>
       </div>
       <div className="otherfont">

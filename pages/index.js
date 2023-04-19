@@ -20,16 +20,18 @@ export default function index({ projects }) {
           💌 갖고 싶은 선물 목록을 작성해주세요!
         </div>
         <div className="text-xl">❗주의❗</div>
-        기한 내에 작성하지 못할 경우 선물은 존재하지 않습니다.
-        <br />
-        왜냐하면 제 인내심이 그 때까지 기다리지 못합니다.
+        기한 내에 작성하지 못할 경우 선물은 존재하지 않습니다. 
+        {/* <br /> */}
+         {" "}왜냐하면 제 인내심이 그 때까지 기다리지 못합니다.
         <div>기한 : 2023-04-19(수) ~ 2023-04-23(일)</div>
       </div>
       <br />
-      <div className="otherfont text-center">
+      <div className="giftfor text-center">
         선물은 아래 사이트에 들어가서 작성해주세요😍
         <br />
-          <a href={`${SECRET_URL}`}>사이트 접속하기</a>
+        <a href={`${SECRET_URL}`} className="bold">
+          사이트 접속하기
+        </a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 mt-0 m-6 py-10 gap-8 xs:w-full">
         {projects.results.map((items) => (

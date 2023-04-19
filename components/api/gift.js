@@ -41,7 +41,7 @@ export default function Gift({ data }) {
         height={100}
         onClick={openModal}
       />
-      <div className="text-center">이미지를 클릭해주세요~</div>
+      <div className="text-center text-white">이미지를 클릭해주세요~</div>
       <div className="otherfont">
         <Modal
          className="otherfont"
