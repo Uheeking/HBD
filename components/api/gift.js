@@ -33,7 +33,7 @@ export default function Gift({ data }) {
   return (
     <div className="otherfont">
       <Image
-        className="project-card"
+        className="project-card sm:w-[500px]"
         src={box}
         alt="image"
         quality={100}
@@ -41,10 +41,10 @@ export default function Gift({ data }) {
         height={100}
         onClick={openModal}
       />
-      <div className="text-center text-white">이미지를 클릭해주세요~</div>
+      <div className="text-center text-white sm:text-2xl lg:text-3xl">이미지를 클릭해주세요~</div>
       <div className="otherfont">
         <Modal
-         className="otherfont"
+          className="otherfont"
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           style={customStyles}
@@ -53,6 +53,7 @@ export default function Gift({ data }) {
         >
           <div className="text-center">
             <Image
+              
               src={bear}
               alt="image"
               quality={100}

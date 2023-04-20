@@ -14,7 +14,7 @@ export default function Photo() {
     <div>
       <div className="grid grid-cols-2 md:grid-cols-2 mt-0 m-7 gap-8 xs:w-full">
         <Image
-          className="w-full fix-parent"
+          className="w-full fix-parent "
           src={seasonImage1}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
