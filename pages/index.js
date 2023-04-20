@@ -61,10 +61,10 @@ export async function getStaticProps(context) {
     options
   );
 
-  const { results } = await res.json();
+  const projects = await res.json();
 
   return {
-    props: { projects: { results } }, // will be passed to the page component as props
+    props: { projects }, // will be passed to the page component as props
   };
 }
 

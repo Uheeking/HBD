@@ -21,7 +21,7 @@ const customStyles = {
 
 export default function Gift({ data }) {
   const { properties } = data;
-  const name = properties.Name.title[0].plain_text;
+  const name = properties.Name.title[0]?.plain_text;
   const [modalIsOpen, setIsOpen] = useState(false);
   const openModal = () => {
     setIsOpen(true);

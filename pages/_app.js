@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div>
+    <div className="w-300px">
       <Head>
         <title>celebrate your birthday</title>
         <link rel="icon" href="/metamong.png" />

@@ -30,7 +30,8 @@ export default function card() {
   };
 
   return (
-    <div>
+    <div style={{ minWidth: "360px" }}
+    className="md:w-2/4 lg:w-full">
       <div className="parent">
         <Image
           className="w-full"
@@ -66,25 +67,13 @@ export default function card() {
           contentLabel="Example Modal"
           ariaHideApp={false}
         >
-          {/* <div className="text-center parent">
-            <Image
-              style={{ height: "400px" }}
-              src={letter1}
-              alt="image"
-              quality={100}
-              width={500}
-              height={500}
-              onClick={openModal}
-            />
-          </div> */}
-          <div className="backImg" >
+          <div className="backImg">
             <Typewriter
               words={[WRITE]}
               loop={1}
               cursor
               cursorStyle="|"
               typeSpeed={90}
-              // deleteSpeed={50}
               delaySpeed={1000}
             />
           </div>
