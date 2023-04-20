@@ -27,6 +27,7 @@ export default function App({ Component, pageProps }) {
         <Link href="/">gift</Link>
         <Link href="/card">card</Link>
         <Link href="/photo">photo</Link>
+        <Link href="/cam">cam</Link>
       </div>
       <Component {...pageProps} />
     </div>
