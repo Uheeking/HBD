@@ -30,9 +30,9 @@ export default function card() {
   };
 
   return (
-    <div style={{ minWidth: "360px" }}
-    className="md:w-2/4 lg:w-full">
-      <div className="parent">
+    <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}
+    className="">
+      <div className="parent text-center">
         <Image
           className="w-full"
           src={sora}
@@ -42,9 +42,8 @@ export default function card() {
           height={100}
           onClick={openModal}
         />
-        <span className="children bg-white p-1 font-black">
+        <span className="children bg-white p-1 font-black sm:-top-[190px] sm:text-2xl">
           <Typewriter
-            className=""
             words={[QUESTION]}
             loop={5}
             cursor
@@ -54,7 +53,7 @@ export default function card() {
             delaySpeed={1000}
           />
         </span>
-        <div className="text-center npoint">
+        <div className="text-center npoint sm:text-4xl">
           대답을 듣고 싶다면 <p className="point">소라고동🎺</p>을 클릭해주세요!
         </div>
       </div>
