@@ -18,24 +18,28 @@ export default function Photo() {
           src={seasonImage1}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
+          alt="seasonImage1"
         />
         <Image
           className="w-full"
           src={seasonImage2}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
+          alt="seasonImage2"
         />
         <Image
           className="w-full"
           src={seasonImage3}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
+          alt="seasonImage3"
         />
         <Image
           className="w-full"
           src={seasonImage4}
           width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
+          alt="seasonImage4"
         />
       </div>
       <div className="shine text-center text-xl sm:text-3xl bg-white lg:text-5xl lg:p-[30px]">
@@ -47,6 +51,7 @@ export default function Photo() {
         src={chunsikImage}
         width={IMAGE_WIDTH}
         height={IMAGE_HEIGHT}
+        alt="chunsikImage"
       />
     </div>
   );

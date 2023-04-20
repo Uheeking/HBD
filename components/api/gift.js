@@ -35,7 +35,7 @@ export default function Gift({ data }) {
       <Image
         className="project-card sm:w-[500px]"
         src={box}
-        alt="image"
+        alt="open_image"
         quality={100}
         width={300}
         height={100}
@@ -53,9 +53,8 @@ export default function Gift({ data }) {
         >
           <div className="text-center">
             <Image
-              
               src={bear}
-              alt="image"
+              alt="modal_image"
               quality={100}
               width={300}
               height={100}

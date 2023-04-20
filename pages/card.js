@@ -36,7 +36,7 @@ export default function card() {
         <Image
           className="w-full"
           src={sora}
-          alt="image"
+          alt="cora_image"
           quality={100}
           width={300}
           height={100}
@@ -66,7 +66,8 @@ export default function card() {
           contentLabel="Example Modal"
           ariaHideApp={false}
         >
-          <div className="backImg">
+          <div style={{minWidth: '370px'}}
+          className="backImg sm:w-[700px] sm:pl-[55px]">
             <Typewriter
               words={[WRITE]}
               loop={1}
