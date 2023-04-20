@@ -67,3 +67,4 @@ export async function getStaticProps(context) {
     props: { projects: { results } }, // will be passed to the page component as props
   };
 }
+
