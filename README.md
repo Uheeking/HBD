@@ -35,3 +35,4 @@ typewriter 애니메이션을 구현하고 편지에 해당 기능을 구현하�
 세번째에는 친구와의 사진을 넣어 페이지를 꾸몄다. 그리고 네번째에는 배포를 해두어 친구와 사진을 찍게 구현을 하게 해두었다. 그리고 이를 저장할 수 있게끔 해놓았다.
 <p align="center"><img width="354" alt="image" src="https://user-images.githubusercontent.com/90121929/233908568-4595235f-779a-49cd-b2ee-7039a7aa7e57.png"></p>
 <p align="center"><img width="354" alt="image" src="https://user-images.githubusercontent.com/90121929/233911968-88eb5f19-532f-41d8-8b2f-027142c44aba.png"></p>
+
