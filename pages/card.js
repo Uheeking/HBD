@@ -5,6 +5,7 @@ import letter1 from "@/public/letter1.png";
 import Modal from "react-modal";
 import { Typewriter } from "react-simple-typewriter";
 import { WRITE, QUESTION } from "../components/write";
+
 require("dotenv").config();
 console.log(process.env.QUESTION);
 
@@ -15,13 +16,13 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     position: "fixed",
-    marginRight: "-50%",
     transform: "translate(-50%, -50%)",
   },
 };
 
-export default function card() {
+export default function Card() {
   const [modalIsOpen, setIsOpen] = useState(false);
+
   const openModal = () => {
     setIsOpen(true);
   };
@@ -30,8 +31,7 @@ export default function card() {
   };
 
   return (
-    <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}
-    className="">
+    <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}>
       <div className="parent text-center">
         <Image
           className="w-full"
@@ -53,7 +53,7 @@ export default function card() {
             delaySpeed={1000}
           />
         </span>
-        <div className="text-center npoint sm:text-4xl">
+        <div className="text-center sm:text-4xl">
           대답을 듣고 싶다면 <p className="point">소라고동🎺</p>을 클릭해주세요!
         </div>
       </div>
