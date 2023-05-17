@@ -19,12 +19,11 @@ export default function Cam() {
         <span className="text-lg ">
           생일자와 함께 기념 사진을 찍어보세요!
         </span>
-        {/* <Image */}
-        <div className="bg-white m-10" style={{padding: '10px 10px 30px 10px'}}>
+        <div className="bg-white m-10 pt-[10px] pr-[10px] pb-[30px] pl-[10px]" >
         <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
         </div>
         <button
-          className="w-[150px] h-[70px] bg-purple1 rounded-xl text-white text-2xl font-kangwon-bold photo_head bold"
+          className="w-[150px] h-[70px] bg-purple1 rounded-xl text-white text-2xl font-kangwon-bold bold"
           onClick={capture}
         >
           저장!
@@ -34,11 +33,10 @@ export default function Cam() {
       <div className="text-center">(저장된 사진은 우클릭으로 저장 가능합니다.)</div>
       {imgSrc && (
         <div
-        className="flex flex-col items-center" style={{padding :'10px 10px 30px 10px'}}
-          // className="px-4 border flex flex-col items-center pt-4 mb-5 ml-2 mr-2 bg-white"
+        className="flex flex-col items-center pt-[10px] pr-[10px] pb-[30px] pl-[10px]"
         >
           <div className="bg-white p-3">
-          <Image src={imgSrc} width={300} height={100}/>
+          <Image src={imgSrc} width={300} height={100} alt="찍힌 사진"/>
           <div className="font-kangwon-bold text-xl pt-4 text-center">
             2023. 4. 14. 도도 생일 기념🎉
           </div>
