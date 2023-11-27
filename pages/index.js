@@ -20,11 +20,8 @@ export default function Index({ projects }) {
       </div>
       <br />
       <div className="giftfor text-center lg:text-2xl">
-        선물은 아래 사이트에 들어가서 작성해주세요😍
+        기한이 만료되어 선물을 입력할 수 없습니다. 내년을 노려주세요!😍
         <br />
-        <a href={`${SECRET_URL}`} className="bold">
-          사이트 접속하기
-        </a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-0 m-6 py-10 gap-8 xs:w-full">
         {projects.results.map((item) => (
