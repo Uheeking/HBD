@@ -5,6 +5,7 @@ import letter1 from "@/public/letter1.png";
 import Modal from "react-modal";
 import { Typewriter } from "react-simple-typewriter";
 import { WRITE, QUESTION } from "../components/write";
+import Confetti from 'react-confetti'
 
 require("dotenv").config();
 console.log(process.env.QUESTION);
@@ -32,6 +33,7 @@ export default function Card() {
 
   return (
     <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}>
+    <Confetti />
       <div className="parent text-center">
         <Image
           className="w-full"
