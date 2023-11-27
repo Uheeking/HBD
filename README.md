@@ -37,4 +37,4 @@ typewriter 애니메이션을 구현하고 편지에 해당 기능을 구현하�
 <p align="center"><img width="354" alt="image" src="https://user-images.githubusercontent.com/90121929/233911968-88eb5f19-532f-41d8-8b2f-027142c44aba.png"></p>
 
 마지막으로 페이지가 궁금하신 분들은 아래의 사이트를 방문해주시면 감사하겠습니다. 
-https://hbd-b6nuhfe3l-uheeking.vercel.app/
+https://hbd-ftj39rl3e-uheeking.vercel.app/
