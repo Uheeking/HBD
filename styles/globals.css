@@ -185,7 +185,7 @@ html {
   top: -380px;
   left: 150px;
 }
-<<<<<<< HEAD
+
 .photo_head{
   font-family: 'KimjungchulMyungjo-Bold';
 }
@@ -195,16 +195,4 @@ html {
     color: white;
     text-shadow: 4px 2px 2px gray;
     justify-content: space-around;
-=======
-
-.photo_head {
-  font-family: 'KimjungchulMyungjo-Bold';
-}
-
-.headd {
-  font-family: 'LOTTERIACHAB';
-  color: white;
-  text-shadow: 4px 2px 2px gray;
-  justify-content: space-around;
->>>>>>> 0f0fac21ec962bd473250eb7096bee54519949c6
 }
