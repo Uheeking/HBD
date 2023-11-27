@@ -1,18 +1,9 @@
-import React, { useState } from "react";
-import dotenv from "dotenv";
-const TOKEN = process.env.NOTION_TOKEN;
-const DB_ID = process.env.NOTION_DATABASE_ID;
-const SECRET_URL = process.env.SECRET_URL;
+import React from "react";
 import Gift from "@/components/api/gift";
-import Link from "next/link";
 
-export default function index({ projects }) {
-  console.log(projects);
-  const [giftbox, setGiftbox] = useState("");
-  const saveGift = (event) => {
-    setGiftbox(event.target.value);
-    console.log(event.target.value);
-  };
+const { NOTION_TOKEN, NOTION_DATABASE_ID, SECRET_URL } = process.env;
+
+export default function Index({ projects }) {
   return (
     <div className="mt-3">
       <div className="notice text-center">
@@ -29,15 +20,12 @@ export default function index({ projects }) {
       </div>
       <br />
       <div className="giftfor text-center lg:text-2xl">
-        선물은 아래 사이트에 들어가서 작성해주세요😍
+        기한이 만료되어 선물을 입력할 수 없습니다. 내년을 노려주세요!😍
         <br />
-        <a href={`${SECRET_URL}`} className="bold">
-          사이트 접속하기
-        </a>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 mt-0 m-6 py-10 gap-8 xs:w-full">
-        {projects.results.map((items) => (
-          <Gift key={items.id} data={items} />
+        {projects.results.map((item) => (
+          <Gift key={item.id} data={item} />
         ))}
       </div>
     </div>
@@ -51,7 +39,7 @@ export async function getStaticProps(context) {
       accept: "application/json",
       "Notion-Version": "2022-02-22",
       "content-type": "application/json",
-      Authorization: `Bearer ${TOKEN}`,
+      Authorization: `Bearer ${NOTION_TOKEN}`,
     },
     body: JSON.stringify({
       sorts: [{ property: "Name", direction: "descending" }],
@@ -59,14 +47,14 @@ export async function getStaticProps(context) {
   };
 
   const res = await fetch(
-    `https://api.notion.com/v1/databases/${DB_ID}/query`,
+    `https://api.notion.com/v1/databases/${NOTION_DATABASE_ID}/query`,
     options
   );
 
   const projects = await res.json();
 
   return {
-    props: { projects }, // will be passed to the page component as props
+    props: { projects }, 
   };
 }
 
