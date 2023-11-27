@@ -79,7 +79,10 @@ html {
 }
 
 .project-card {
-  @apply flex flex-col transition transform hover: scale-105 hover:shadow-lg
+  @apply flex flex-col 
+          transition transform 
+          hover:scale-105
+          hover:shadow-lg
 }
 
 .otherfont {
@@ -174,18 +177,16 @@ html {
   font-family: 'LeeSeoyun';
 }
 
-.fix-parent {
-  position: relative;
-  ;
+.fix-parent{
+  position: relative;;
 }
 
-.chunsik-image {
+.chunsik-image{
   position: relative;
   display: inline;
   top: -380px;
   left: 150px;
 }
-
 .photo_head{
   font-family: 'KimjungchulMyungjo-Bold';
 }
