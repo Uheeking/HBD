@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import sora from "@/public/sora.jpg";
-import letter1 from "@/public/letter1.png";
 import Modal from "react-modal";
 import { Typewriter } from "react-simple-typewriter";
 import { WRITE, QUESTION } from "../components/write";
@@ -32,8 +31,9 @@ export default function Card() {
   };
 
   return (
-    <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}>
+    <>
     <Confetti />
+    <div style={{ minWidth: "370px", maxWidth: '700px', margin: '0 auto' }}>
       <div className="parent text-center">
         <Image
           className="w-full"
@@ -85,5 +85,6 @@ export default function Card() {
         </Modal>
       </div>
     </div>
+    </>
   );
 }
